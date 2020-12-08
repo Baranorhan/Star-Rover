@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,22 +9,22 @@ using UnityEngine.SceneManagement;
 [RequireComponent (typeof(AudioSource))]
 public class PlayVideo : MonoBehaviour {
 
-    public MovieTexture movie;
+//    public MovieTexture movie;
     private AudioSource audio;
 
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<RawImage>().texture = movie as MovieTexture;
+   //     GetComponent<RawImage>().texture = movie as MovieTexture;
         audio = GetComponent<AudioSource>();
-        audio.clip = movie.audioClip;
-        movie.Play();
+     //7   audio.clip = movie.audioClip;
+       // movie.Play();
         audio.Play();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Space)&& movie.isPlaying)
+		if(Input.GetKeyDown(KeyCode.Space))//&& movie.isPlaying)
         {
             movie.Pause();
         }
@@ -37,3 +38,4 @@ public class PlayVideo : MonoBehaviour {
         }
 	}
 }
+*/
